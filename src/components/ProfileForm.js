@@ -31,28 +31,30 @@ const handleForm =(e)=>{
     <form>
     <fieldset>
     <legend>Bio Data</legend>
-    <div className='names'>
+    <div className="names">
     <label>
     First Name
-    <input name='firstname' type="text" onChange={handler}/>
+    <input name="firstname" value={profile.firstName} type="text" onChange={handler}/>
     </label>
     
     
     <label>
     Last Name
-    <input name='lastname' type="text" onChange={handler}/>
+    <input name="lastname" value={profile.lastName} type="text" onChange={handler}/>
     </label>
 
+    </div>
 
+    <div className= "names">
     <label>
     Email
-    <input name='email' type="email" onChange={handler}/>
+    <input name="email" value={profile.email} type="email" onChange={handler}/>
     </label>
 
 
     <label>
     Phone
-    <input name='phone' type="tel" onChange={handler}/>
+    <input name= "phone" value={profile.phone} type="tel" onChange={handler}/>
     </label>
     
     
